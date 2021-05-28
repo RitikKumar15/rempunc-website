@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<h1> WELCOME TO REMOVE PUNCTUATION. ENTER YOUR TEXT BELOW </h1>
+		<form method='post' action='/analyze'>
+		{% csrf_token %}
+		<textarea rows='10' cols='60' placeholder='Enter Your Text' name='text'></textarea><br>
+		<input type='checkbox' name='removepunc'> Remove Punctuation </input><br>
+		<input type='checkbox' name='fullcaps'> Capitalize </input><br>
+		<input type='checkbox' name='extraspaceremover'> Extra Space Remover </input><br>
+		<input type='checkbox' name='newlineremover'> New Line Remove </input><br>
+		<input type='checkbox' name='wordcounter'> Count Words </input><br>
+		
+		<button type='submit' style='margin-top: 5px'> Send </button>
+		</form>
+	</body>
+</html>
